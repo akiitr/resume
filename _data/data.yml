@@ -3,17 +3,17 @@ meta:
   language: en              # text language, the value is HTML lang attribute value, default is "en"
 
 basic:
-  name: Foo Bar                      # name
-  title: Backend Developer           # job title 
+  name: Anubhav Kumar                      # name
+  title: PD Sign-off Hardware Engineer          # job title 
   avatar:
     show: true                       # show or hide avatar
-    path: /assets/images/profile.png # file path or link to your avatar
+    path: /assets/images/profile.jpg # file path or link to your avatar
 
 contact:
-  location: Beijing, China  # location, text or markdown link syntax
-  email: me@example.com     # email address
+  location: Bangalore, India  # location, text or markdown link syntax
+  email: anubhavkumar.995@gmail.com     # email address
   phone: +86-111-2222-3333  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com      # site link without schema, like example.com, will automatically prepend "https://"
+  website: akiitr.github.io      # site link without schema, like example.com, will automatically prepend "https://"
 
   gender:                   # gender or pronoun
   birthday:                 # birthday
@@ -25,7 +25,7 @@ contact:
   # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
 
   # programming
-  github:                   # https://github.com/<username>
+  github: akiitr                  # https://github.com/<username>
   gitlab:                   # https://gitlab.com/<username>
   bitbucket:                # https://bitbucket.com/<username>
   git:                      # selfhost git site link without schema "https://"
@@ -60,7 +60,7 @@ contact:
   producthunt:              # https://www.producthunt.com/@<username>
 
   # cv
-  linkedin:                 # https://linkedin.com/in/<username>
+  linkedin: anubhavk95                # https://linkedin.com/in/<username>
   indeed:                   # https://my.indeed.com/p/<id>
   xing:                     # https://www.xing.com/profile/<username>
   fiverr:                   # https://www.fiverr.com/<username>
@@ -104,51 +104,57 @@ profile:
   order: 1
   title: Profile
   description: |
-    The profile section in a resume is a brief summary of the applicant's skills, qualifications, and experience. The purpose of this section is to provide a snapshot of the applicant's professional background and highlight their most relevant accomplishments and strengths. It may include information such as the applicant's career objectives, years of experience, areas of expertise, and key achievements.
-
-    A well-crafted profile section can help to grab the attention of potential employers and encourage them to read on and learn more about the applicant's qualifications and experience.
-
+    Results-oriented Physical Design Engineer specializing in STA, SI signoff, and PDN analysis for advanced semiconductor designs down to 3nm. Proven ability to close timing and power integrity on complex SoCs, driving PPA improvements. Adept at cross-functional collaboration and leveraging automation for enhanced efficiency. Currently innovating with AI/ML agents for design and signoff.
 experience:
   show: true
   order: 2
   title: Experiences
   description: |
-    The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
 
   items:
-    - company: Second Company
+    - company: Qualcomm
       link: '#'
       tags: Full-time
-      date: 2018.03 - 2019.03
-      role: Backend Developer
-      location: Beijing
+      date: Jul 2020 - Present
+      role: Senior Hardware Engineer
+      location: Bengaluru, Karnataka, India
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+        + Led STA closure for critical high Performance Cores GPU/SOC and interfaces, achieving ~10% frequency increase via clock tweaks and 22% leakage/area recovery through selective "don't touch" strategy and logic island optimization, improving skew and congestion.
+        + Drove Power Delivery Signoff (IR/EM/ESD) for sub-10nm SoCs, achieving 60mV VCD dynamic IR drop margin uplift and 28% PDN closure TAT reduction via automation and strategic placement.
+        + Implemented Timing, Power, and Area/Leakage ECOs, resolving TDRC violations while optimizing PG grid resistance, IR drop, EM, and inrush.
+        + Developed and deployed automation scripts (GDHS chaining, Inrush, PDN, STA, CLP), significantly reducing manual reviews and improving project runtime.
+        + Enabled selective Timing what-if analysis for PDN drops, accelerating ECO turnaround by 60%.
+        + Developing an LLM-based chat interface for team knowledge access and AI agents for automated analysis in PD and signoff domains.
+        + Collaborated with Design, Synthesis, Verification, Constraints, and RDL teams for high-quality signoff.
+        + Integrated IP blocks and managed static/analog routing for STA/PDN signoff.
+        + Proficient with Synopsys (DC, PrimeTime, PT-SI, Tweaker), Cadence (Tempus, Tempus-SI, RTL Compiler, Virtuoso, LEC, CLP, Voltus), and Ansys (Redhawk, Redhawk-SC, Pathfinder-SC) EDA tools.
+        + Skilled in scripting (Tcl, Shell, Python, Perl).
 
-    - company: First Company
+    - company: Bharat Electronics Limited
       link:
-      tags: Part-time, remote
-      date: 2017.03 - 2018.03
-      role: Backend Developer
-      location: Beijing
+      tags: Full-time
+      date: Mar 2018 - Jul 2018
+      role: Dy Engineer
+      location: Bengaluru, Karnataka, India
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+        Design and development of logic circuit boards for Electronic Voting Machines (EVM) and VVPATs.
+
+    - company: Lava International Limited
+      link:
+      tags: Full-time
+      date: Jun 2016 - Sep 2017
+      role: QA/QC Engineer
+      location: Bengaluru, Karnataka, India
+      description: |
+        Hardware QA and Reliability Assurance.
+
 
 project:
   show: true
   order: 3
   title: Projects
   description: |
-    The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
-
-    In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
-
-    The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
-
+    To be updated...
   items:
     - name: Personal project
       link: '#'
@@ -173,130 +179,124 @@ skill:
   order: 4
   title: Skills
   description: |
-    The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
-
-    The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
-
-    When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
-
-    There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
-
+    Languages: Python, Tcl, Perl, Shell Scripting, Verilog, VHDL, Embedded C
+    Physical Design: Innovus, Fusion Compiler, DC, ICC
+    STA: PrimeTime, Tweaker, Tempus
+    PDN: Redhawk-SC, Pathfinder-SC, Redhawk (Tcl), Voltus, Cadence Allegro (Basic)
+    Verification: HSPICE, Virtuoso, Xilinx Vivado, MATLAB
+    AI/ML: LLMs, AI agents Development
+    Operating Systems: Linux/UNIX, Windows
   items:
-    - name: Skill A
+    - name: Python
       level: 5
-    - name: Skill B
+    - name: Tcl-Tk
       level: 4
-    - name: Skill C
+    - name: VHDL/Verilog
       level: 3
-    - name: Skill D
+    - name: Perl/Shell
       level: 4
-    - name: Skill E
+    - name: STA (PrimeTime, Tempus)
+      level: 4
+    - name: PDN (Redhawk-SC, Voltus, HSPICE)
+      level: 4
+    - name: PD (Innovus, Fusion Compiler)
       level: 3
-    - name: Skill F
-      level: 1
-    - name: Skill G
-      level: 4
-    - name: Skill H
-      level: 4
-    - name: Skill I
+    - name: others
+      level: 3
+    - name: LLMs
       level: 3
 
   groups:
-    - name: Group A Skills
+    - name: Languages
       item:
-        - Skill A
-        - Skill B
-        - Skill C
-        - Skill D
-    - name: Group B Skills
+        - Python
+        - Tcl-Tk
+        - VHDL/Verilog
+        - Perl/Shell
+    - name: EDA tools
       item:
-        - Skill E
-        - Skill F
-        - Skill G
-    - name: Group C Skills
+        - STA (PrimeTime, Tempus)
+        - PDN (Redhawk-SC, Voltus, HSPICE)
+        - PD (Innovus, Fusion Compiler)
+        - others (Conformal, MATLAB, Vivado)
+    - name: AI/ML
       item:
-        - Skill H
-        - Skill I
-
+        - LLMs
+        - AI agents
+    - name: OS
+      item:
+        - Unix
+        - Windows
 education:
   show: true
   order: 5
   title: Education
   description: |
-    The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
-
-    In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
-
+    
   items:
-    - institution: Example University
+    - institution: Indian Institute of Technology, Roorkee, India
       link: '#'
-      date: 2015 - 2018
-      major: Machine Learning
+      date: 2018 - 2020
+      major: M.Tech, Microelectronics and VLSI
       degree: Master
       description: |
-        Additional information for this institution.
-        + First
-        + Second
+        Worked on the below MHRD and industry sponsered Projects .
+        + An Energy-Efficient In-Memory Processor Using CMOS SRAM.
+        + Aging Aware Delay-Model for Robust Timing signoff. 
 
-    - institution: Example University
+    - institution: LPU Jalandhar, India
       link:
-      date: 2011 - 2015
-      major: Computer Science
+      date: 2012 - 2016
+      major: Electronics and Communication Engineering
       degree: Bachelor
       description: |
-        Additional information for this institution.
-        + First
-        + Second
+        comprehensive coursework from Electronic Design to software integration. 
+        + Developed audio tools like cleaning, amplifying and real time translation with app (MATLAB, Audrino & Android).
+
 
 certificate:
   show: true
   order: 6
   title: Certificates
   description: |
-    The certificate section in a resume is a dedicated section where you can showcase any additional certifications or specialized training you have received. This section provides potential employers with a more complete picture of your skills and expertise, and can help you stand out from other candidates.
-
-    Certificates can come from a variety of sources, such as online courses, workshops, or professional development programs. Examples of certificates that might be relevant to include on your resume could include certifications in a particular software or technology, industry-specific certifications, or certifications related to a specific skill or area of expertise.
-
-    When including your certificates in your resume, be sure to provide the name of the certification, the institution or organization that issued it, and the date it was issued. You may also want to include a brief description of the skills or knowledge that the certification demonstrates.
-
-    The certificate section of your resume should be tailored to the specific job you are applying for, and should only include certifications that are relevant to the position. By highlighting your certifications, you can demonstrate your commitment to professional development and your expertise in a particular area.
-
+    
   items:
-    - name: Example Certificate One
-      issuer: by Example
+    - name: Deep Learning
+      issuer: DeepLearning.AI
       date: 2020
+      link: 'https://www.coursera.org/account/accomplishments/specialization/T3V68Z6485HK'
+      description: |
+        Deep Learning Specialization Covering From Neural Networks to Transformers Hyperparameters Tuning and optimization.
+    - name: The Data Scientist’s Toolbox
+      issuer: Johns Hopkins University
+      date: 2020
+      link: 'https://www.coursera.org/account/accomplishments/records/Z7XZKP386US8'
+      description: |
+        
+    - name: VLSI CAD Design
+      issuer:  University of Illinois
+      date: 2024
       link: '#'
       description: |
-        It's my Example Certificate One by Example.
-    - name: Example Certificate Two
-      issuer: by Example
-      date: 2020
-      link:
-      description: |
-        It's my Example Certificate Two by Example.
+        Learning the core concepts behind building the CAD software tools for EDA automation and methodology.
 
 publication:
   show: true
   order: 7
-  title: Publications
+  title: "Beyond SPICE Simulation: A Novel Variability-Aware STA Methodology for Digital Timing Closure"
   description: |
-    The publication section in a resume is a dedicated section where you can showcase any publications that you have authored or contributed to. This section is particularly relevant for individuals in academic or research fields, but can also be relevant for individuals in other fields who have published articles or papers.
-
-    Publications can include academic journal articles, conference papers, book chapters, reports, or other written works. In this section, you should list the title of the publication, the names of any co-authors, the name of the publication or conference, the date of publication, and any other relevant details.
-
-    If you have a long list of publications, you may want to consider including only the most relevant or significant publications on your resume. Alternatively, you could create a separate publication list and provide it as a separate document, either in your application materials or upon request.
-
-    Including a publication section in your resume can help demonstrate your expertise and credibility in your field, and can help you stand out from other candidates. However, if you do not have any publications to list, it is not necessary to include this section in your resume.
-
+    + Developed a method for device-level variability-aware STA using Python and Bash scripting.
+    + Created an Effective Current Source Model (ECSM) .libs file with custom tool flow.
+    + Integrated variation-aware timing models into industry-standard STA tools.
+    + Conducted simulations using Mentor Graphics ELDO SPICE, Synopsys DC Compiler, and PrimeTime.
+    + Achieved 98.13% reduction in recharacterization efforts compared to conventional SPICE simulation.
+    + Utilized STMicroelectronics (STM) 65 nm CMOS process for simulation work.
   items:
-    - title: Example Publication in Action
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link: '#'
-    - title: The Art of Example Publication
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link:
+    - title: A Novel Variability-Aware STA Methodology for Digital Timing Closure
+      authors: Lomash Chandra Acharya; Anubhav Kumar; Khoirom Johnson Singh; Neha Gupta; Nayakanti Sai Shabarish; Neeraj Mishra
+      conference: SMACD, 2023
+      link: 'https://ieeexplore.ieee.org/document/10192158'
+
 
 award:
   show: true
@@ -324,7 +324,7 @@ award:
         It's my Example Awared Two by Example.
 
 patent:
-  show: true
+  show: false
   order: 9
   title: Patents
   description: |
@@ -352,46 +352,34 @@ organization:
   order: 10
   title: Organizations
   description: |
-    The organization section in a resume, specifically for social contexts, is a section where you can showcase any relevant involvement or leadership positions in social, cultural, or community organizations. This section can highlight your commitment to social causes and your ability to work collaboratively with others towards a common goal.
-
-    In this section, you can list the name of the organization, your role and responsibilities, the duration of your involvement, and any significant achievements or accomplishments. You can also mention any skills or qualities you gained from your involvement, such as leadership, teamwork, communication, or problem-solving skills.
-
-    This section can be especially valuable for candidates seeking positions in the non-profit sector, social work, or community engagement roles, where experience in social or cultural organizations can demonstrate a genuine passion for social causes and a willingness to work collaboratively towards social change. However, it is important to only include organizations that are relevant to the job you are applying for, and avoid listing organizations that may be controversial or potentially offensive.
-
+    + Placement Coordinator at Training and Placement cell, IIT Roorkee (2019-2020): Connecting and coordinating Semiconductor companies for the Recruitment Processes.
+    + High Altitude Trek Leader at Himalayan Explorer Club, IIT Roorkee (2019-2020): Led multiple sports activities and High-Altitude Mountain Treks reaching peak of ~5000m.
 language:
   show: true
   order: 11
   title: Languages
   description: |
-    The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
-
-    It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
-
+    
   items:
-    - idiom: Chinese
-      level: Native
     - idiom: English
       level: Professional
+    - idiom: Hindi
+      level: Native
 
 interest:
   show: true
   order: 12
   title: Interests
   description: |
-    The interests section in a resume typically refers to a section where you can mention your hobbies, interests, and activities outside of work or school. This section can give potential employers a better idea of your personality, your values, and your interests beyond your professional experience.
-
-    Including an interest section in your resume can be helpful if your interests are relevant to the job you are applying for, such as if you are applying for a job in a creative field and your hobbies include painting or writing. It can also be useful if you are applying for a job where teamwork or social skills are important, and you can mention interests that demonstrate those qualities.
-
-    However, it is important to be selective when including an interest section in your resume, and to choose interests that are appropriate and professional. Avoid including controversial or potentially offensive interests, and focus on interests that showcase your positive qualities and strengths.
-
+    
   items:
-    - item: Reading
+    - item: Trekking
       link: '#'
     - item: Cooking
       link:
 
 evaluation:
-  show: true
+  show: false
   order: 13
   title: Self-evaluation
   description: |
@@ -402,7 +390,7 @@ evaluation:
     A well-crafted self-evaluation section can demonstrate your self-awareness and confidence in your abilities, as well as your willingness to continuously learn and grow. However, it is important to be honest and avoid over-inflating your skills or qualifications, as this can negatively impact your credibility and the hiring manager's impression of you.
 
 reference:
-  show: true
+  show: false
   order: 14
   title: References
   description: |
