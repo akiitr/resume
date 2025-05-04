@@ -4,7 +4,7 @@ meta:
 
 basic:
   name: Anubhav Kumar                      # name
-  title: PD Sign-off Hardware Engineer          # job title 
+  title: Physical Design Sign-off Hardware Engineer          # job title 
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.jpg # file path or link to your avatar
@@ -12,8 +12,8 @@ basic:
 contact:
   location: Bangalore, India  # location, text or markdown link syntax
   email: anubhavkumar.995@gmail.com     # email address
-  phone: +86-111-2222-3333  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: akiitr.github.io      # site link without schema, like example.com, will automatically prepend "https://"
+  phone: +91-upon-request  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: akiitr.is-a.dev     # site link without schema, like example.com, will automatically prepend "https://"
 
   gender:                   # gender or pronoun
   birthday:                 # birthday
@@ -119,16 +119,16 @@ experience:
       role: Senior Hardware Engineer
       location: Bengaluru, Karnataka, India
       description: |
-        + Led STA closure for critical high Performance Cores GPU/SOC and interfaces, achieving ~10% frequency increase via clock tweaks and 22% leakage/area recovery through selective "don't touch" strategy and logic island optimization, improving skew and congestion.
-        + Drove Power Delivery Signoff (IR/EM/ESD) for sub-10nm SoCs, achieving 60mV VCD dynamic IR drop margin uplift and 28% PDN closure TAT reduction via automation and strategic placement.
-        + Implemented Timing, Power, and Area/Leakage ECOs, resolving TDRC violations while optimizing PG grid resistance, IR drop, EM, and inrush.
-        + Developed and deployed automation scripts (GDHS chaining, Inrush, PDN, STA, CLP), significantly reducing manual reviews and improving project runtime.
-        + Enabled selective Timing what-if analysis for PDN drops, accelerating ECO turnaround by 60%.
-        + Developing an LLM-based chat interface for team knowledge access and AI agents for automated analysis in PD and signoff domains.
-        + Collaborated with Design, Synthesis, Verification, Constraints, and RDL teams for high-quality signoff.
+        + Led STA closure for high-performance Cores (GPU/SOC), achieving ~10% frequency increase and 22% leakage/area recovery via clock/logic optimization.
+        + Drove sub-10nm SoCs PDN Signoff (IR/EM/ESD), improving VCD IR drop margin by 60mV and reducing TAT by 28% via automation/placement strategies.
+        + Expertise in Implementing Timing, Power, Area/Leakage ECOs, resolving TDRC violations and optimizing PG grid, IR drop, EM, and inrush.
+        + Developed/deployed automation scripts (GDHS, Inrush, PDN, STA, CLP), significantly reducing manual effort and improved runtime.
+        + Accelerated ECO turnaround by 60% through selective Timing what-if analysis for PDN drops.
+        + Developed RAG LLM chat web interface for team knowledge access and AI agents for automating PD/signoff.
+        + Collaborated with cross-functional teams (Design, Synthesis, Verification, Constraints, RDL) for robust design and signoff.
         + Integrated IP blocks and managed static/analog routing for STA/PDN signoff.
-        + Proficient with Synopsys (DC, PrimeTime, PT-SI, Tweaker), Cadence (Tempus, Tempus-SI, RTL Compiler, Virtuoso, LEC, CLP, Voltus), and Ansys (Redhawk, Redhawk-SC, Pathfinder-SC) EDA tools.
-        + Skilled in scripting (Tcl, Shell, Python, Perl).
+        + Proficient in Synopsys (PrimeTime, PT-SI, Tweaker, DC), Cadence (Tempus, Tempus-SI, Voltus, Virtuoso, CLP), and Ansys (Redhawk-SC, Pathfinder-SC) EDA tools.
+        + Skilled in Tcl, Shell, Python, and Perl scripting.
 
     - company: Bharat Electronics Limited
       link:
@@ -150,7 +150,7 @@ experience:
 
 
 project:
-  show: true
+  show: false
   order: 3
   title: Projects
   description: |
@@ -179,46 +179,38 @@ skill:
   order: 4
   title: Skills
   description: |
-    Languages:
-      - Python
-      - Tcl
-      - Perl
-      - Shell Scripting
-      - Verilog
-      - VHDL
-      - Embedded C
-    Physical Design:
-      - Innovus
-      - Fusion Compiler
-      - DC
-      - ICC
-    STA:
-      - PrimeTime
-      - Tweaker
-      - Tempus
-    PDN:
-      - Redhawk-SC
-      - Pathfinder-SC
-      - Redhawk (Tcl)
-      - Voltus
-      - Cadence Allegro (Basic)
-    Verification:
-      - HSPICE
-      - Virtuoso
-      - Xilinx Vivado
-      - MATLAB
-    AI/ML:
-      - LLMs
-      - AI agents Development
-    Operating Systems:
-      - Linux/UNIX
-      - Windows
+
+  groups:
+    - name: Programming Languages
+      item:
+        - Python
+        - Tcl-Tk
+        - Perl   
+        - Verilog RTL
+        - HTML-JS-CSS
+    - name: EDA tools
+      item:
+        - STA (PrimeTime, Tempus)
+        - PDN (Redhawk-SC, Voltus, HSPICE)
+        - PD (Innovus, Fusion Compiler)
+        - others (Conformal, MATLAB, Vivado)
+    - name: AI/ML
+      item:
+        - Data Analysis
+        - Tensorflow 
+        - LLMs
+        - RAG
+    - name: OS
+      item:
+        - Unix
+        - NixOS
+        - Windows - Mac        
   items:
     - name: Python
       level: 5
     - name: Tcl-Tk
       level: 4
-    - name: VHDL/Verilog
+    - name: Verilog
       level: 3
     - name: Perl/Shell
       level: 4
@@ -228,32 +220,7 @@ skill:
       level: 4
     - name: PD (Innovus, Fusion Compiler)
       level: 3
-    - name: others
-      level: 3
-    - name: LLMs
-      level: 3
 
-  groups:
-    - name: Languages
-      item:
-        - Python
-        - Tcl-Tk
-        - VHDL/Verilog
-        - Perl/Shell
-    - name: EDA tools
-      item:
-        - STA (PrimeTime, Tempus)
-        - PDN (Redhawk-SC, Voltus, HSPICE)
-        - PD (Innovus, Fusion Compiler)
-        - others (Conformal, MATLAB, Vivado)
-    - name: AI/ML
-      item:
-        - LLMs
-        - AI agents
-    - name: OS
-      item:
-        - Unix
-        - Windows
 education:
   show: true
   order: 5
@@ -310,7 +277,7 @@ certificate:
 publication:
   show: true
   order: 7
-  title: "Beyond SPICE Simulation: A Novel Variability-Aware STA Methodology for Digital Timing Closure"
+  title: Publications
   description: |
     + Developed a method for device-level variability-aware STA using Python and Bash scripting.
     + Created an Effective Current Source Model (ECSM) .libs file with custom tool flow.
@@ -318,11 +285,15 @@ publication:
     + Conducted simulations using Mentor Graphics ELDO SPICE, Synopsys DC Compiler, and PrimeTime.
     + Achieved 98.13% reduction in recharacterization efforts compared to conventional SPICE simulation.
     + Utilized STMicroelectronics (STM) 65 nm CMOS process for simulation work.
+    + Qualcomm (GPU PPA improvements within constrained Timelines) Global GSOC internal Publication.
   items:
     - title: A Novel Variability-Aware STA Methodology for Digital Timing Closure
       authors: Lomash Chandra Acharya; Anubhav Kumar; Khoirom Johnson Singh; Neha Gupta; Nayakanti Sai Shabarish; Neeraj Mishra
       conference: SMACD, 2023
       link: 'https://ieeexplore.ieee.org/document/10192158'
+    - title: "Eliza CX PPA Challenges & Solutions: GPU Case Study"
+      authors: Anubhav Kumar; Harish Kumar V; Prashant Aggrwal; Chandrashekar S V
+      conference: Qualcomm GSOC, 2025
 
 
 award:
