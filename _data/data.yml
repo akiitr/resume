@@ -179,13 +179,40 @@ skill:
   order: 4
   title: Skills
   description: |
-    Languages: Python, Tcl, Perl, Shell Scripting, Verilog, VHDL, Embedded C
-    Physical Design: Innovus, Fusion Compiler, DC, ICC
-    STA: PrimeTime, Tweaker, Tempus
-    PDN: Redhawk-SC, Pathfinder-SC, Redhawk (Tcl), Voltus, Cadence Allegro (Basic)
-    Verification: HSPICE, Virtuoso, Xilinx Vivado, MATLAB
-    AI/ML: LLMs, AI agents Development
-    Operating Systems: Linux/UNIX, Windows
+    Languages:
+      - Python
+      - Tcl
+      - Perl
+      - Shell Scripting
+      - Verilog
+      - VHDL
+      - Embedded C
+    Physical Design:
+      - Innovus
+      - Fusion Compiler
+      - DC
+      - ICC
+    STA:
+      - PrimeTime
+      - Tweaker
+      - Tempus
+    PDN:
+      - Redhawk-SC
+      - Pathfinder-SC
+      - Redhawk (Tcl)
+      - Voltus
+      - Cadence Allegro (Basic)
+    Verification:
+      - HSPICE
+      - Virtuoso
+      - Xilinx Vivado
+      - MATLAB
+    AI/ML:
+      - LLMs
+      - AI agents Development
+    Operating Systems:
+      - Linux/UNIX
+      - Windows
   items:
     - name: Python
       level: 5
