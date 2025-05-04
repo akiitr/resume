@@ -205,21 +205,21 @@ skill:
         - Unix
         - NixOS
         - Windows - Mac        
-  items:
-    - name: Python
-      level: 5
-    - name: Tcl-Tk
-      level: 4
-    - name: Verilog
-      level: 3
-    - name: Perl/Shell
-      level: 4
-    - name: STA (PrimeTime, Tempus)
-      level: 4
-    - name: PDN (Redhawk-SC, Voltus, HSPICE)
-      level: 4
-    - name: PD (Innovus, Fusion Compiler)
-      level: 3
+  # items:
+  #   - name: Python
+  #     level: 5
+  #   - name: Tcl-Tk
+  #     level: 4
+  #   - name: Verilog
+  #     level: 3
+  #   - name: Perl/Shell
+  #     level: 4
+  #   - name: STA (PrimeTime, Tempus)
+  #     level: 4
+  #   - name: PDN (Redhawk-SC, Voltus, HSPICE)
+  #     level: 4
+  #   - name: PD (Innovus, Fusion Compiler)
+  #     level: 3
 
 education:
   show: true
@@ -301,25 +301,20 @@ award:
   order: 8
   title: Awards
   description: |
-    The award section in a resume is a dedicated section where you can showcase any awards you have received. This section is particularly relevant for individuals who have received awards for their work in their field, such as employees who have received performance awards or industry-specific awards. In this section, you should list the name of the award, the organization or institution that awarded it, the date it was awarded, and any other relevant details.
-
-    When including your awards on your resume, be sure to focus on the most significant or relevant awards that showcase your skills and expertise. If you have received a long list of awards, you may want to consider including only the most recent or prestigious awards on your resume.
-
-    By highlighting your awards, you can demonstrate your achievements and accomplishments in your field, and can help differentiate yourself from other candidates. However, if you have not received any awards, it is not necessary to include this section in your resume.
-
+    
   items:
-    - name: Example Awared One
-      awarder: by Example
-      date: 2022
+    - name: Gold Medal, M.Tech, Microelectronics and VLSI
+      awarder: IIT Roorkee
+      date: 2020
       link: '#'
       description: |
-        It's my Example Awared One by Example.
-    - name: Example Awared Two
-      awarder: by Example
-      date: 2022
-      link:
+        For contribution towards the IEEE published research work for Variability-Aware STA methodology.
+    - name: QualStar
+      awarder: Qualcomm
+      date: 2022,2024
       description: |
-        It's my Example Awared Two by Example.
+        + 2022: For contribution towards multiple SOC PDN signoff.
+        + 2024: For contribution towards developing STA automation for the GDHS/APM chaining and inrush checks.
 
 patent:
   show: false
