@@ -150,29 +150,26 @@ experience:
 
 
 project:
-  show: false
+  show: true
   order: 3
   title: Projects
   description: |
-    To be updated...
   items:
-    - name: Personal project
-      link: '#'
-      tags:
-      date: 2015 - 2017
+    - name: Chatwise - Qualcomm
+      date: Feb 2025 - Present
       description: |
-        Personal project description...
-        + First
-        + Second
-
-    - name: OSS project
-      link:
-      tags: committer
-      date:
+        + Designed domain-specific (PDN, STA, FV/CLP) Retrieval-Augmented Generation
+          (RAG) AI agents for accurate, context-aware responses; developed web and CLI
+          interfaces to access agents.
+        + Implemented natural-language CSV script search and LangChain integration for
+          automated script retrieval—reducing lookup time and onboarding effort.
+    - name: Project Dashboard with Embedded AI
+      date: Jan 2026 - Present
       description: |
-        OSS project description...
-        + First
-        + Second
+        + Built a SQLite database to store and track key metrics for all domain runs and integrated
+          LLMs (using existing RAG agents) for automated analysis and recommendations.
+        + Developed a web dashboard that highlights critical run issues and suggests fixes based
+          on RAG-driven knowledge, improving visibility and remediation
 
 skill:
   show: true
@@ -294,6 +291,12 @@ publication:
     - title: "Eliza CX PPA Challenges & Solutions: GPU Case Study"
       authors: Anubhav Kumar; Harish Kumar V; Prashant Aggrwal; Chandrashekar S V
       conference: Qualcomm GSOC, 2025
+    - title: Convergence of a 9M Instance IPA Block
+      authors: Dhiraj Jaiswal, Shyam Krish, Anubhav Kumar
+      conference: QBuzz 2025 - Qualcomm
+      description: |
+        Highlights innovative methods enabling physical and timing closure under tight schedules
+        and extreme design complexity of a 9M instance IPA block.
 
 
 award:
