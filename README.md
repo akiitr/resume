@@ -1,26 +1,8 @@
 <h1 align="center">online-resume</h1>
 
-<p align="center">
-  <a href="https://github.com/tarrex/online-resume/blob/master/LICENSE"><img src="https://img.shields.io/github/license/tarrex/online-resume?style=flat-square" alt="GitHub License"></a>
-  <a href="https://github.com/tarrex/online-resume/forks"><img src="https://img.shields.io/github/forks/tarrex/online-resume?style=flat-square" alt="GitHub forks"></a>
-  <a href="https://github.com/tarrex/online-resume/stargazers"><img src="https://img.shields.io/github/stars/tarrex/online-resume?style=flat-square" alt="GitHub Repo stars"></a>
-  <a href="https://tarrex.github.io/online-resume"><img src="https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=green&up_message=up&url=https%3A%2F%2Ftarrex.github.io%2Fonline-resume" alt="Demo Website"></a>
-  <a href="https://jekyll-themes.com/tarrex/online-resume">
-    <img
-      src="https://img.shields.io/badge/featured%20on-JT-red.svg"
-      height="20"
-      alt="Jekyll Themes Shield"
-    />
-  </a>
-</p>
-
 <h4 align="center">A minimalist Jekyll theme for your resume.</h4>
 
 ---
-
-## Live Demo
-
-:point_right: [online-resume][Demo] :point_left:
 
 ## Getting Started
 
@@ -39,24 +21,13 @@ Features:
 
 ### Usage
 
-#### Quickly
-
-- Fork the repository.
-- Click the `settings` option above.
-- Click `pages` in the Code and automation category on the left.
-- Set up github pages in the build and deployment category.
-  - find `source`, drop down and select `Deploy from a branch`.
-  - find `branch`, drop down and select `master` branch.
-  - Click the `save` button on the right.
-- Wait a little while for the successful building.
-- Open `https://YOUR_GITHUB_USERNAME.github.io/online-resume` in your browser.
-- Now you can see the resume page.
-- Edit the `_data/data.yml` file directly to update your resume.
+- Edit the `_data/data.yml` file to update your resume.
+- The website will be available at `https://akiitr.github.io/resume`.
 
 #### Customization
 
 - `_data/data.yml`: Edit the resume content.
-- `assets/images/profile.png`: Your profile photo.
+- `assets/images/profile.jpg`: Your profile photo.
 - `_config.yml`: Website and theme style settings.
 
 ## FAQ
@@ -71,18 +42,11 @@ If there is no content you want to keep in the section, you can remove it direct
 
 #### How to create a resume in other languages?
 
-For example, if you already have an English version resume and you want to create a Chinese version. Copy a `data.yml` file in the `_data` folder named `cn.yml` and edit the content, then copy an `index.html` file in the root directory named `cn.html` and change the `{%- assign data = site.data.data %}` in the `cn.html` file to `{%- assign data = site.data.cn %}`. After successful building, you can preview the Chinese version of your resume by visiting `https://YOUR_GITHUB_USERNAME.github.io/online-resume/cn`.
+For example, if you already have an English version resume and you want to create a Chinese version. Copy a `data.yml` file in the `_data` folder named `cn.yml` and edit the content, then copy an `index.html` file in the root directory named `cn.html` and change the `{%- assign data = site.data.data %}` in the `cn.html` file to `{%- assign data = site.data.cn %}`. After successful building, you can preview the Chinese version of your resume by visiting `https://akiitr.github.io/resume/cn`.
 
 #### How to deploy on other platforms, like cloudflare, vercel?
 
 You can read and follow [Cloudflare Pages][Cloudflare Pages], [Vercel][Vercel] documents.
 
-## Others
-
-- Hugo Version: [hugo-theme-online-resume][Other Version]
-
-
-[Demo]: https://tarrex.github.io/online-resume
 [Cloudflare Pages]: https://developers.cloudflare.com/pages/framework-guides/deploy-a-jekyll-site/
 [Vercel]: https://vercel.com/guides/deploying-jekyll-with-vercel
-[Other Version]: https://github.com/tarrex/hugo-theme-online-resume

@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 title: Online Resume
 url:
-baseurl:
+baseurl: 
 
 # Sass setting
 sass/style: compressed
@@ -12,7 +12,7 @@ allow_search_engines: true  # allow your resume indexing by search engine, 'true
 description:                # your resume description
 open_graph:
   enable: true                        # enable open graph meta tags
-  image: /assets/images/profile.png   # path or link to the open graph image
+  image: /assets/images/profile.jpg   # path or link to the open graph image
 
 # Style
 date_format: "%Y-%m-%d"     # date format
@@ -32,6 +32,6 @@ analytics:
   google:                   # google
   cloudflare:               # cloudflare
   umami:                    # umami (Replace it with your own)
-    script: https://u.tarrex.com/u.js
-    website_id: af636e2d-31ae-46f1-9071-82b1745143a9
-    domains: tarrex.github.io,tarrex.com
+    script:
+    website_id:
+    domains:
