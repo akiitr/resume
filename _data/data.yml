@@ -314,10 +314,10 @@ award:
         For contribution towards the IEEE published research work for Variability-Aware STA methodology.
     - name: QualStar
       awarder: Qualcomm
-      date: 2022,2024
+      date: 2022-2025
       description: |
         + 2022: For contribution towards multiple SOC PDN signoff.
-        + 2024: For contribution towards developing STA automation for the GDHS/APM chaining and inrush checks.
+        + 2025: For contribution towards developing STA automation for the GDHS/APM chaining and inrush checks.
 
 patent:
   show: false
@@ -370,7 +370,9 @@ interest:
     
   items:
     - item: Trekking
-      link: '#'
+      link: 'https://sportstimingsolutions.in/results?q=eyJlX25hbWUiOiJCREMgRnVuIFJ1biAyMDI0IiwiZV9pZCI6ODA5MTksImJpYk5vIjoiMTEwNyJ9'
+    - item: Running
+      link: 'https://www.novarace.in/individual-result/qrun-2026?bib=10171&race=10K RUN'
     - item: Cooking
       link:
 
