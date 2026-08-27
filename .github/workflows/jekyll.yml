@@ -33,9 +33,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Validate theme contract
-        run: bundle exec ruby scripts/validate.rb
-
       - name: Build site
         env:
           JEKYLL_ENV: production

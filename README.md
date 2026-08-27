@@ -96,7 +96,7 @@ Add the corresponding locale, direction, and font settings under `languages` in 
 
 ## Deploy to GitHub Pages
 
-The repository includes `.github/workflows/jekyll.yml`. In the repository's Pages settings, choose **GitHub Actions** as the publishing source. Pushes to `master` build with the locked Jekyll version and deploy the generated artifact; pull requests run validation and build without deploying.
+The repository includes `.github/workflows/jekyll.yml`. In the repository's Pages settings, choose **GitHub Actions** as the publishing source. Pushes to `master` build with the locked Jekyll version and deploy the generated artifact; pull requests build without deploying.
 
 The workflow uses the Pages-provided base path, so project sites such as `https://USERNAME.github.io/online-resume/` resolve assets correctly.
 
