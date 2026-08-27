@@ -1,109 +1,123 @@
-meta:
-  direction: ltr            # text direction, "ltr" (like English) or "rtl" (like Arabic), default is "ltr"
-  language: en              # text language, the value is HTML lang attribute value, default is "en"
+# This file is both the example site's data and a guide to writing your resume.
+# Replace the placeholder values with your own information and remove fields or
+# entire sections that you do not need. Empty optional fields are not displayed.
+#
+# For each section:
+# - show controls whether the section is displayed.
+# - order controls its position; lower numbers appear first.
+# - title is the heading shown on the resume.
+# - summary supports Markdown. In this guide, it explains how to use the section;
+#   replace it with your own content or leave it empty in your finished resume.
+# In item lists, link is optional; use a complete URL or leave it empty. Keep date
+# formats consistent throughout the resume (for example, YYYY.MM - YYYY.MM).
+updated: "2026-08-27"         # Last updated date in YYYY-MM-DD format; omit it to use the build date
 
-basic:
-  name: Foo Bar                      # name
-  title: Backend Developer           # job title
-  avatar:
-    show: true                       # show or hide avatar
-    path: /assets/images/profile.png # file path or link to your avatar
+name: Foo Bar                 # Your full name
+title: Backend Developer      # Your current or target job title
+headshot: images/profile.png  # File path or URL for your headshot
 
+# Contact values support three forms:
+# 1. Account or ID: github: octocat (the known platform URL is added automatically).
+# 2. Plain text: location: Beijing, China (used when no automatic URL is defined).
+# 3. Markdown link: location: '[Beijing, China](https://maps.example.com/...)'.
+#    Use this form for a custom label or URL; the value must begin with "[".
+# Keep only the contact methods you want to publish. Do not paste a full URL into
+# an account/ID field unless you use the Markdown-link form.
 contact:
-  location: Beijing, China  # location, text or markdown link syntax
-  email: me@example.com     # email address
-  phone: +86-111-2222-3333  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com      # site link without schema, like example.com, will automatically prepend "https://"
+  - location: Beijing, China  # Plain text or a Markdown link
+  - email: me@example.com     # Address only; "mailto:" is added automatically
+  - phone: +86-111-2222-3333  # Use international format; "tel:" is added automatically
+  - website: example.com      # Omit http(s)://; "https://" is added automatically
 
-  gender:                   # gender or pronoun
-  birthday:                 # birthday
-  nationality:              # nationality
-  visa:                     # passport visa
-  drivinglicense:           # driving licence
+  - gender:                   # Gender or pronouns; include only if relevant
+  - birthday:                 # Date of birth; consider local norms and privacy
+  - nationality:              # Nationality or citizenship
+  - visa:                     # Visa or work-authorization status
+  - driver_license:           # Driver's licence class or status
 
-  # ! Do not paste the link directly.
-  # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
+  # For the platforms below, enter only the <placeholder> part shown in the
+  # comment unless it explicitly asks for a Markdown link. The theme builds the
+  # full URL automatically only for platforms with a stable profile URL.
 
   # programming
-  github:                   # https://github.com/<username>
-  gitlab:                   # https://gitlab.com/<username>
-  bitbucket:                # https://bitbucket.com/<username>
-  git:                      # selfhost git site link without schema "https://"
-  leetcode:                 # https://leetcode.com/<username>
-  codeforces:               # https://codeforces.com/profile/<username>
-  codewars:                 # https://www.codewars.com/users/<username>
-  topcoder:                 # https://profiles.topcoder.com/<username>
-  huggingface:              # https://huggingface.co/<username>
-  codepen:                  # https://codepen.io/<username>
-  tryhackme:                # https://tryhackme.com/p/<username>
+  - github:                   # https://github.com/<user>
+  - gitlab:                   # https://gitlab.com/<user>; use Markdown for a self-hosted instance
+  - gitea:                    # https://gitea.com/<user>; use Markdown for a self-hosted instance
+  - gitee:                    # https://gitee.com/<user>
+  - bitbucket:                # https://bitbucket.org/<user>
+  - leetcode:                 # https://leetcode.com/<user>
+  - codeforces:               # https://codeforces.com/profile/<user>
+  - codewars:                 # https://www.codewars.com/users/<user>
+  - topcoder:                 # https://www.topcoder.com/members/<user>
+  - huggingface:              # https://huggingface.co/<user>
+  - tryhackme:                # https://tryhackme.com/p/<user>
+  - hackerone:                # https://hackerone.com/<user>
 
   # research
-  googlescholar:            # https://scholar.google.com/citations?user=<username>
-  researchgate:             # https://www.researchgate.net/profile/<username>
-  orcid:                    # https://orcid.org/<id>
-  figshare:                 # https://figshare.com/authors/<name/id>
-  kaggle:                   # https://www.kaggle.com/<username>
+  - googlescholar:            # https://scholar.google.com/citations?user=<user>, user ID from the profile URL's citations?user=<id>
+  - researchgate:             # https://www.researchgate.net/profile/<user>
+  - orcid:                    # https://orcid.org/<id>
+  - figshare:                 # https://figshare.com/authors/<name/id>, <name>/<numeric-id> from the profile's /authors/ path
+  - kaggle:                   # https://www.kaggle.com/<user>
 
   # writing
-  medium:                   # https://medium.com/@<username>
-  wordpress:                # https://<username>.wordpress.com
-  blogger:                  # https://<username>.blogspot.com
-  devto:                    # https://dev.to/<username>
+  - medium:                   # https://medium.com/@<user>
+  - devto:                    # https://dev.to/<user>
 
   # creativity
-  figma:                    # https://www.figma.com/@<username>
-  behance:                  # https://www.behance.net/<username>
-  dribbble:                 # https://dribbble.com/<username>
-  artstation:               # https://www.artstation.com/<username>
-  pixiv:                    # https://www.pixiv.net/users/<id>
-  pinterest:                # https://www.pinterest.com/<username>
-  producthunt:              # https://www.producthunt.com/@<username>
+  - figma:                    # https://www.figma.com/@<user>
+  - behance:                  # https://www.behance.net/<user>
+  - dribbble:                 # https://dribbble.com/<user>
+  - artstation:               # https://www.artstation.com/<user>
+  - pixiv:                    # https://www.pixiv.net/users/<id>
+  - pinterest:                # https://www.pinterest.com/<user>
+  - producthunt:              # https://www.producthunt.com/@<user>
 
   # cv
-  linkedin:                 # https://linkedin.com/in/<username>
-  indeed:                   # https://my.indeed.com/p/<id>
-  xing:                     # https://www.xing.com/profile/<username>
-  fiverr:                   # https://www.fiverr.com/<username>
-  freelancer:               # https://www.freelancer.com/u/<username>
+  - linkedin:                 # https://linkedin.com/in/<user>
+  - indeed:                   # Markdown link using the share URL generated by Indeed
+  - xing:                     # https://www.xing.com/profile/<user>
+  - fiverr:                   # https://www.fiverr.com/<user>
+  - freelancer:               # https://www.freelancer.com/u/<user>
+  - aboutme:                 # https://about.me/<user>
+  - linktree:                 # https://linktr.ee/<user>
 
   # chat
-  wechat:                   # wechat id, text or markdown link syntax
-  whatsapp:                 # https://wa.me/<number>
-  telegram:                 # https://t.me/<username>
-  messenger:                # https://m.me/<username>
-  line:                     # https://line.me/R/ti/p/@<lineid>
-  viber:                    # https://vb.me/<username>
-  threema:                  # https://threema.id/<userid>
-  signal:                   # signal username, text or markdown link syntax
-  wire:                     # wire username, text or markdown link syntax
+  - wechat:                   # WeChat ID, plain text, or a Markdown link
+  - whatsapp:                 # https://wa.me/<country-code-and-number>; digits only, without + or punctuation
+  - telegram:                 # https://t.me/<user>
+  - messenger:                # https://m.me/<user>
+  - line:                     # https://line.me/R/ti/p/@<lineid>, LINE Official Account ID without @; the theme adds it
+  - viber:                    # Viber share URL as a Markdown link, or plain text
+  - threema:                  # https://threema.id/<userid>
+  - signal:                   # Signal username, plain text, or a Markdown link
+  - wire:                     # Wire username, plain text, or a Markdown link
 
   # social
-  stackoverflow:            # https://stackoverflow.com/users/<id>
-  stackexchange:            # https://stackexchange.com/users/<id>
-  quora:                    # https://www.quora.com/profile/<username>
-  zhihu:                    # https://www.zhihu.com/people/<username>
-  goodreads:                # https://www.goodreads.com/user/show/<username>
-  strava:                   # https://www.strava.com/athletes/<id>
-  wikipedia:                # https://www.wikipedia.org/wiki/User:<username>
-  twitter:                  # https://twitter.com/<username>
-  x:                        # https://x.com/<username>
-  mastodon:                 # text, the format must be like "username@yourserver.com"
-  threads:                  # https://www.threads.net/@<username>
-  vk:                       # https://vk.com/<username>
-  weibo:                    # weibo username, text or markdown link syntax
-  instagram:                # https://instagram.com/<username>
-  unsplash:                 # https://unsplash.com/@<username>
-  _500px:                   # https://500px.com/p/<username>
-  youtube:                  # https://www.youtube.com/@<username>
-  tiktok:                   # https://www.tiktok.com/@<username>
-  snapchat:                 # https://www.snapchat.com/add/<username>
-  twitch:                   # https://www.twitch.tv/<username>
+  - stackoverflow:            # https://stackoverflow.com/users/<id>
+  - stackexchange:            # https://stackexchange.com/users/<id>
+  - quora:                    # https://www.quora.com/profile/<user>
+  - zhihu:                    # https://www.zhihu.com/people/<user>
+  - goodreads:                # https://www.goodreads.com/user/show/<user>
+  - strava:                   # https://www.strava.com/athletes/<id>
+  - wikipedia:                # Markdown link to the user page on the relevant wiki
+  - x:                        # https://x.com/<user>
+  - mastodon:                 # Mastodon user@server, plain text, or a Markdown link
+  - bluesky:                  # https://bsky.app/profile/<user>
+  - threads:                  # https://www.threads.net/@<user>
+  - vk:                       # https://vk.com/<user>
+  - sinaweibo:                # Sina Weibo user, plain text, or a Markdown link
+  - instagram:                # https://instagram.com/<user>
+  - unsplash:                 # https://unsplash.com/@<user>
+  - 500px:                    # https://500px.com/p/<user>
+  - youtube:                  # https://www.youtube.com/@<user>
+  - tiktok:                   # https://www.tiktok.com/@<user>
 
 profile:
   show: true
   order: 1
   title: Profile
-  description: |
+  summary: |
     The profile section in a resume is a brief summary of the applicant's skills, qualifications, and experience. The purpose of this section is to provide a snapshot of the applicant's professional background and highlight their most relevant accomplishments and strengths. It may include information such as the applicant's career objectives, years of experience, areas of expertise, and key achievements.
 
     A well-crafted profile section can help to grab the attention of potential employers and encourage them to read on and learn more about the applicant's qualifications and experience.
@@ -112,17 +126,17 @@ experience:
   show: true
   order: 2
   title: Experiences
-  description: |
+  summary: |
     The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
 
   items:
     - company: Second Company
-      link: '#'
+      link: https://example.com/link/to/second-company
       tags: Full-time
       date: 2018.03 - 2019.03
       role: Backend Developer
       location: Beijing
-      description: |
+      summary: |
         Your key responsibilities and achievements in the company.
         + First
         + Second
@@ -133,7 +147,7 @@ experience:
       date: 2017.03 - 2018.03
       role: Backend Developer
       location: Beijing
-      description: |
+      summary: |
         Your key responsibilities and achievements in the company.
         + First
         + Second
@@ -142,7 +156,7 @@ project:
   show: true
   order: 3
   title: Projects
-  description: |
+  summary: |
     The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
 
     In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
@@ -151,10 +165,10 @@ project:
 
   items:
     - name: Personal project
-      link: '#'
+      link: https://example.com/link/to/personal-project
       tags:
       date: 2015 - 2017
-      description: |
+      summary: |
         Personal project description...
         + First
         + Second
@@ -163,7 +177,7 @@ project:
       link:
       tags: committer
       date:
-      description: |
+      summary: |
         OSS project description...
         + First
         + Second
@@ -172,7 +186,7 @@ skill:
   show: true
   order: 4
   title: Skills
-  description: |
+  summary: |
     The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
 
     The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
@@ -181,6 +195,8 @@ skill:
 
     There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
 
+  # Use items, groups, or both. When both are present, both are displayed.
+  # Levels 1–5 correspond to Beginner / Amateur / Competent / Proficient / Expert
   items:
     - name: Skill A
       level: 5
@@ -222,18 +238,18 @@ education:
   show: true
   order: 5
   title: Education
-  description: |
+  summary: |
     The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
 
     In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
 
   items:
     - institution: Example University
-      link: '#'
+      link: https://example.com/link/to/example-university
       date: 2015 - 2018
       major: Machine Learning
       degree: Master
-      description: |
+      summary: |
         Additional information for this institution.
         + First
         + Second
@@ -243,16 +259,36 @@ education:
       date: 2011 - 2015
       major: Computer Science
       degree: Bachelor
-      description: |
+      summary: |
         Additional information for this institution.
         + First
         + Second
 
-certificate:
+course:
   show: true
   order: 6
+  title: Courses
+  summary: |
+    Include only substantial courses that are relevant to the target role and add knowledge not already clear from your education or certifications. Give the course name, provider, completion date, and a credential link when available.
+  items:
+    - name: Example Course One
+      institution: by Example
+      date: 2022
+      link: https://example.com/link/to/example-course-one
+      summary: |
+        It's my Example Course One by Example.
+    - name: Example Course Two
+      institution: by Example
+      date: 2022
+      link:
+      summary: |
+        It's my Example Course Two by Example.
+
+certificate:
+  show: true
+  order: 7
   title: Certificates
-  description: |
+  summary: |
     The certificate section in a resume is a dedicated section where you can showcase any additional certifications or specialized training you have received. This section provides potential employers with a more complete picture of your skills and expertise, and can help you stand out from other candidates.
 
     Certificates can come from a variety of sources, such as online courses, workshops, or professional development programs. Examples of certificates that might be relevant to include on your resume could include certifications in a particular software or technology, industry-specific certifications, or certifications related to a specific skill or area of expertise.
@@ -265,21 +301,21 @@ certificate:
     - name: Example Certificate One
       issuer: by Example
       date: 2020
-      link: '#'
-      description: |
+      link: https://example.com/link/to/example-certificate-one
+      summary: |
         It's my Example Certificate One by Example.
     - name: Example Certificate Two
       issuer: by Example
       date: 2020
       link:
-      description: |
+      summary: |
         It's my Example Certificate Two by Example.
 
 publication:
   show: true
-  order: 7
+  order: 8
   title: Publications
-  description: |
+  summary: |
     The publication section in a resume is a dedicated section where you can showcase any publications that you have authored or contributed to. This section is particularly relevant for individuals in academic or research fields, but can also be relevant for individuals in other fields who have published articles or papers.
 
     Publications can include academic journal articles, conference papers, book chapters, reports, or other written works. In this section, you should list the title of the publication, the names of any co-authors, the name of the publication or conference, the date of publication, and any other relevant details.
@@ -292,7 +328,7 @@ publication:
     - title: Example Publication in Action
       authors: Foo Bar
       conference: Foobar, 2019
-      link: '#'
+      link: https://example.com/link/to/example-publication-in-action
     - title: The Art of Example Publication
       authors: Foo Bar
       conference: Foobar, 2019
@@ -300,9 +336,9 @@ publication:
 
 award:
   show: true
-  order: 8
+  order: 9
   title: Awards
-  description: |
+  summary: |
     The award section in a resume is a dedicated section where you can showcase any awards you have received. This section is particularly relevant for individuals who have received awards for their work in their field, such as employees who have received performance awards or industry-specific awards. In this section, you should list the name of the award, the organization or institution that awarded it, the date it was awarded, and any other relevant details.
 
     When including your awards on your resume, be sure to focus on the most significant or relevant awards that showcase your skills and expertise. If you have received a long list of awards, you may want to consider including only the most recent or prestigious awards on your resume.
@@ -310,24 +346,24 @@ award:
     By highlighting your awards, you can demonstrate your achievements and accomplishments in your field, and can help differentiate yourself from other candidates. However, if you have not received any awards, it is not necessary to include this section in your resume.
 
   items:
-    - name: Example Awared One
+    - name: Example Award One
       awarder: by Example
       date: 2022
-      link: '#'
-      description: |
+      link: https://example.com/link/to/example-award-one
+      summary: |
         It's my Example Awared One by Example.
-    - name: Example Awared Two
+    - name: Example Award Two
       awarder: by Example
       date: 2022
       link:
-      description: |
-        It's my Example Awared Two by Example.
+      summary: |
+        It's my Example Award Two by Example.
 
 patent:
   show: true
-  order: 9
+  order: 10
   title: Patents
-  description: |
+  summary: |
     The patent section in a resume is a dedicated section where you can showcase any patents that you have been granted or are in the process of obtaining. This section is particularly relevant for individuals who work in scientific or technical fields, as well as for individuals who have developed innovative products or technologies.
 
     In this section, you should list the title of the patent, the name of the inventors, the patent number, and the date it was granted. If the patent is pending, you can indicate that it is "pending" or "in review." You may also want to provide a brief description of the technology or invention that the patent covers.
@@ -336,11 +372,11 @@ patent:
 
     Template for a pending patent:
 
-    + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date]. Patent pending.
+    + [Inventor Name]. [Filing Year]. [Title]. [Patent Number], filed [Filing Date]. Patent pending.
 
     Template for an approved patent:
 
-    + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date], [Received Date].
+    + [Inventor Name]. [Filing Year]. [Title]. [Patent Number], filed [Filing Date], and granted [Grant Date].
 
     The following are some examples of patent formats.
 
@@ -349,9 +385,9 @@ patent:
 
 organization:
   show: true
-  order: 10
+  order: 11
   title: Organizations
-  description: |
+  summary: |
     The organization section in a resume, specifically for social contexts, is a section where you can showcase any relevant involvement or leadership positions in social, cultural, or community organizations. This section can highlight your commitment to social causes and your ability to work collaboratively with others towards a common goal.
 
     In this section, you can list the name of the organization, your role and responsibilities, the duration of your involvement, and any significant achievements or accomplishments. You can also mention any skills or qualities you gained from your involvement, such as leadership, teamwork, communication, or problem-solving skills.
@@ -360,9 +396,9 @@ organization:
 
 language:
   show: true
-  order: 11
+  order: 12
   title: Languages
-  description: |
+  summary: |
     The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
 
     It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
@@ -375,9 +411,9 @@ language:
 
 interest:
   show: true
-  order: 12
+  order: 13
   title: Interests
-  description: |
+  summary: |
     The interests section in a resume typically refers to a section where you can mention your hobbies, interests, and activities outside of work or school. This section can give potential employers a better idea of your personality, your values, and your interests beyond your professional experience.
 
     Including an interest section in your resume can be helpful if your interests are relevant to the job you are applying for, such as if you are applying for a job in a creative field and your hobbies include painting or writing. It can also be useful if you are applying for a job where teamwork or social skills are important, and you can mention interests that demonstrate those qualities.
@@ -386,15 +422,15 @@ interest:
 
   items:
     - item: Reading
-      link: '#'
+      link: https://example.com/link/to/reading
     - item: Cooking
       link:
 
 evaluation:
   show: true
-  order: 13
+  order: 14
   title: Self-evaluation
-  description: |
+  summary: |
     The self-evaluation section in a resume is a section where you can evaluate and assess your own skills, strengths, and weaknesses. It is typically a short paragraph or bullet points at the end of your resume, which provides a personal perspective on your abilities and how they align with the requirements of the job.
 
     In this section, you can highlight your achievements, areas of expertise, and any unique qualities or experiences that set you apart from other candidates. You can also mention areas where you are looking to improve or gain further experience.
@@ -403,26 +439,25 @@ evaluation:
 
 reference:
   show: true
-  order: 14
+  order: 15
   title: References
-  description: |
-    A reference section in a resume is a list of individuals who can vouch for your skills, work ethic, and character. These individuals are typically former managers, colleagues, or mentors who have worked closely with you in the past and can provide insight into your abilities and work style.
+  summary: |
+    References are usually provided separately and only when requested. Choose people who know your professional or academic work, ask for their permission, and tell them about the role before sharing their details.
 
-    It's important to note that including a reference section in a resume is not always necessary, and some employers may prefer to request references separately. If you do choose to include a reference section, it should typically be located at the end of your resume.
+    **Privacy:** Do not publish a reference's home address, personal phone number, or private email address without explicit consent. On a public resume, omit contact details or write “References available upon request,” then share them privately with the employer.
 
-    When listing references, be sure to include the individual's name, job title, company name, phone number, and email address. It's also a good idea to ask for the individual's permission before listing them as a reference, and to let them know what kind of job you are applying for so they can speak to your relevant skills and experience.
-
-    It's important to choose references who can provide a positive and comprehensive evaluation of your work. Avoid listing family members or friends as references, and instead focus on individuals who can speak to your professional abilities and accomplishments.
-
+  # The entries below are fictitious and exist only to demonstrate the available
+  # fields. Remove them in a real resume, or obtain explicit consent before
+  # publishing a reference's personal information.
   items:
     - name: Foo One
-      link: '#'
+      link: https://example.com/link/to/foo-one
       title: Backend Developer
       institution: Second Company
       address: 1234 Example St, XXX, XY 11111
       email: foo.one@example.com
       phone: 111-222-333
-      description: |
+      summary: |
         Foo One was my colleague in Second Company.
 
     - name: Bar Two
@@ -432,7 +467,5 @@ reference:
       address: 4321 Example St, YYY, XY 22222
       email: bar.two@example.com
       phone: 444-555-666
-      description: |
+      summary: |
         Bar Two was my advisor at Example University.
-
-close: <strong>Sorry, my resume has been hidden.</strong>
