@@ -1,7 +1,7 @@
 <h1 align="center">online-resume</h1>
 
 <p align="center">
-  <a href="https://github.com/tarrex/online-resume/blob/master/LICENSE"><img src="https://img.shields.io/github/license/tarrex/online-resume?style=flat-square" alt="GitHub License"></a>
+  <a href="https://github.com/tarrex/online-resume/blob/main/LICENSE"><img src="https://img.shields.io/github/license/tarrex/online-resume?style=flat-square" alt="GitHub License"></a>
   <a href="https://github.com/tarrex/online-resume/forks"><img src="https://img.shields.io/github/forks/tarrex/online-resume?style=flat-square" alt="GitHub forks"></a>
   <a href="https://github.com/tarrex/online-resume/stargazers"><img src="https://img.shields.io/github/stars/tarrex/online-resume?style=flat-square" alt="GitHub stars"></a>
   <a href="https://tarrex.github.io/online-resume"><img src="https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Ftarrex.github.io%2Fonline-resume" alt="Demo website"></a>
@@ -96,7 +96,7 @@ Add the corresponding locale, direction, and font settings under `languages` in 
 
 ## Deploy to GitHub Pages
 
-The repository includes `.github/workflows/jekyll.yml`. In the repository's Pages settings, choose **GitHub Actions** as the publishing source. Pushes to `master` build with the locked Jekyll version and deploy the generated artifact; pull requests build without deploying.
+The repository includes `.github/workflows/jekyll.yml`. In the repository's Pages settings, choose **GitHub Actions** as the publishing source. Pushes to `main` build with the locked Jekyll version and deploy the generated artifact; pull requests build without deploying.
 
 The workflow uses the Pages-provided base path, so project sites such as `https://USERNAME.github.io/online-resume/` resolve assets correctly.
 
