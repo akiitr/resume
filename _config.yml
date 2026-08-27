@@ -38,12 +38,12 @@ show_theme_credit: true
 
 analytics:
   umami:
-    enable: false
-    script: https://cloud.umami.is/script.js
-    website_id:
+    enable: true
+    script: https://u.tarrex.com/u.js
+    website_id: af636e2d-31ae-46f1-9071-82b1745143a9
     host_url:
     auto_track:
-    domains:
+    domains: tarrex.github.io,tarrex.com
     tag:
     performance:
     exclude_search:
