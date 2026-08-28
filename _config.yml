@@ -1,6 +1,6 @@
 title: Online Resume
 description: A minimalist online resume.
-url:
+url: https://tarrex.github.io
 baseurl:
 
 default_language: en
@@ -28,13 +28,13 @@ languages:
         - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&display=swap
       family: '"Noto Serif SC", ui-serif, "Songti SC", STSong, SimSun, serif'
 
-private: false
-message: Sorry, my resume has been hidden.
-math: true
-theme_color: "#1DA1F2"
+private: false              # replace the resume with a private message
+message: Sorry, my resume has been hidden.  # markdown shown in private mode
+math: true                  # enable client-side math rendering
+theme_color: "#115E59"      # accent color
 
-allow_indexing: true
-show_theme_credit: true
+allow_indexing: true        # allow indexing outside private mode
+show_theme_credit: true     # show theme credit in the footer
 
 analytics:
   umami:
@@ -59,8 +59,8 @@ analytics:
 
 features:
   math:
-    engine: katex
-    version: 0.18.4
+    engine: katex         # katex | mathjax
+    version: 0.18.4       # CDN version
 
 markdown: kramdown
 kramdown:
@@ -74,13 +74,6 @@ liquid:
 strict_front_matter: true
 
 exclude:
-  - .bundle
-  - .git
-  - .github
-  - .jekyll-cache
-  - .jekyll-metadata
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - README.md
   - vendor
