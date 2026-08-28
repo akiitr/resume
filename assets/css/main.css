@@ -363,7 +363,7 @@
       align-items: baseline;
       justify-content: space-between;
       gap: var(--space-4);
-      padding-block: var(--space-1);
+      /* padding-block: var(--space-1); */
 
       &:not(:last-child) {
         border-block-end: 1px dashed color-mix(in srgb, var(--fg-tertiary) 15%, transparent);
@@ -494,9 +494,26 @@
 
 @layer print {
   @media print {
+    :root {
+      --text-xs: 8.5pt;
+      --text-sm: 9.5pt;
+      --text-base: 11pt;
+      --text-lg: 12pt;
+      --text-xl: 14pt;
+      --text-hg: 22pt;
+    }
+
     @page {
-      size: A4;
-      margin: 12mm;
+      size: A4 portrait;
+      margin: 16mm 15mm;
+
+      @bottom-center {
+        font-family: var(--font-family);
+        font-size: var(--text-xs);
+        line-height: var(--leading-none);
+        color: var(--fg-tertiary);
+        content: counter(page) " / " counter(pages);
+      }
     }
 
     body {
@@ -505,8 +522,13 @@
       print-color-adjust: exact;
     }
 
+    a {
+      overflow-wrap: anywhere;
+    }
+
     main {
       min-block-size: auto;
+      max-inline-size: none;
       margin: 0;
       padding: 0;
       border: 0;
@@ -528,20 +550,9 @@
       break-after: avoid-page;
     }
 
-    .section-content .item,
-    .skill .group,
-    li {
+    .item-line,
+    .group-items {
       break-inside: avoid-page;
-    }
-
-    p,
-    li {
-      orphans: 3;
-      widows: 3;
-    }
-
-    a {
-      overflow-wrap: anywhere;
     }
   }
 }
