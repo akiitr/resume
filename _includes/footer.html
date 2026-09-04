@@ -1,12 +1,14 @@
 {%- assign translations = site.data.i18n[include.language_code] | default: site.data.i18n.en -%}
-{%- assign updated_at = include.resume.updated | default: site.time -%}
 <footer>
-  <span>
-    {{ translations.updated | default: "Updated on" }}
-    <time datetime="{{ updated_at | date: "%Y-%m-%d" }}">
-      {{ updated_at | date: translations.date_format }}
-    </time>
-  </span>
+  {%- if site.private != true %}
+    {%- assign updated_at = include.resume.updated | default: site.time -%}
+    <span>
+      {{ translations.updated | default: "Updated on" }}
+      <time datetime="{{ updated_at | date: "%Y-%m-%d" }}">
+        {{ updated_at | date: translations.date_format }}
+      </time>
+    </span>
+  {%- endif %}
   {%- if site.show_theme_credit != false %}
     <i class="fa-solid fa-heart fa-beat-fade" aria-hidden="true"></i>
     <a href="https://github.com/tarrex/online-resume">Online-Resume</a>
